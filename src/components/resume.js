@@ -8,7 +8,7 @@ class Resume extends Component {
     return (
       <div>
         <Grid>
-          <Cell className="resume-right-col" col={9}>
+          <Cell className="resume-col" col={9}>
             <h2>Education</h2>
 
             <Education
@@ -27,6 +27,13 @@ class Resume extends Component {
             <hr style={{ borderTop: "3px solid #e22947" }} />
 
             <h2> Job experience</h2>
+
+            <Experience
+              startYear={2020}
+              endYear={"Current job"}
+              jobName="Habekk"
+              jobDescription="Clinic for mentally unstable"
+            />
 
             <Experience
               startYear={2018}

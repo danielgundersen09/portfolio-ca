@@ -12,7 +12,7 @@ import {
 class Landing extends Component {
   render() {
     return (
-      <div style={{ width: "100%", margin: "auto" }}>
+      <div style={{ width: "100%" }}>
         <Grid className="landing-grid">
           <Cell col={12}>
             <div className="banner-text">
@@ -21,7 +21,7 @@ class Landing extends Component {
           </Cell>
 
           {/* Project 1 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card className="cards grow" shadow={5}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -37,14 +37,18 @@ class Landing extends Component {
               project, second year.
             </CardText>
             <CardActions border>
-              <Button colored href="/">
+              <Button
+                colored
+                href="https://github.com/danielgundersen09/semester-project-2"
+                target="_blank"
+              >
                 GitHub
               </Button>
             </CardActions>
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card className="cards grow" shadow={5}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -58,14 +62,18 @@ class Landing extends Component {
               A SpaceX webpage i made for the semester project 2, first year.
             </CardText>
             <CardActions border>
-              <Button colored href="/">
+              <Button
+                colored
+                href="https://github.com/danielgundersen09/Spacex-semester-project"
+                target="_blank"
+              >
                 GitHub
               </Button>
             </CardActions>
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card className="cards grow" shadow={5}>
             <CardTitle
               style={{
                 color: "black",
@@ -79,7 +87,11 @@ class Landing extends Component {
               A Course assignment i made for a firm called Homefair.
             </CardText>
             <CardActions border>
-              <Button colored href="/">
+              <Button
+                colored
+                href="https://github.com/danielgundersen09/Homefair-ca"
+                target="_blank"
+              >
                 GitHub
               </Button>
             </CardActions>

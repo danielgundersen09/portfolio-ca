@@ -6,9 +6,8 @@ class About extends Component {
     return (
       <div>
         <Grid>
-          <Cell className="aboutme-col" col={7}>
-            <h1>About me</h1>
-            <hr style={{ borderTop: "3px solid #e22947" }} />
+          <Cell style={{ marginTop: "100px" }} className="aboutme-col" col={7}>
+            <h1 style={{ borderBottom: "3px solid white" }}>About me</h1>
             <p>
               My name is Daniel Gundersen and i`m a front-end developer student
               at Noroff Oslo. I have a general studies background and a course

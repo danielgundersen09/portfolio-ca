@@ -1,6 +1,9 @@
 @import "partials/_variables";
 
-.header-color {
+/* Header/footer css */
+
+.header-color,
+.footer-color {
   background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
@@ -15,6 +18,18 @@
     #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.link-hover {
+  &.grow {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* landing page css */
 
 .landing-grid {
   background: #2980b9; /* fallback for old browsers */
@@ -32,14 +47,9 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
-
-/* landing page css */
 
 .banner-text {
   background-color: $primaryBackgroundColour;
@@ -47,7 +57,8 @@
   width: 75%;
   margin: auto;
   border-radius: 10px;
-  margin-top: 10em;
+  margin-top: 5em;
+  margin-bottom: 5em;
   padding: 10px 0px 10px 0px;
 }
 
@@ -57,17 +68,68 @@
   color: $primaryTextColour;
 }
 
+.cards {
+  min-width: 450;
+  margin: auto;
+  margin-bottom: 100px;
+  &.grow {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 /* About me Page css */
 
 .aboutme-col {
+  color: $primaryTextColour;
+  padding: 2em;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Resume Page css */
+.resume-col {
   background: $primaryBackgroundColour;
   color: $primaryTextColour;
   padding: 2em;
 }
 
-/* Resume Page css */
-.resume-right-col {
-  background: $primaryBackgroundColour;
-  color: $primaryTextColour;
-  padding: 2em;
+.contact-grid {
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inputstyle {
+  min-width: 500px;
+  min-height: 50px;
+  margin-bottom: 25px;
 }
